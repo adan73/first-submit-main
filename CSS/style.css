@@ -1,1 +1,108 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer, nav, aside, section, div  {
+    display: block;
+    
+}
+  
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+} 
+@media screen and(min-width:1200px){
+    .wrapper{
+        padding: 0px;
+        
+    border: 50px;
+    }
+    
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: white;
+  }
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    background-color:#E0F2F1;
+    width: 100%;
+    height: 84px;
+}
+
+
+header .logo img {
+    width:275.17px;
+    height: 140px;
+    flex-shrink: 0;
+    top: -26px;
+    left: 47px; 
+    position: relative;
+}
+
+
+
+.profile {
+    display: flex;
+}
+
+.profile-text {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: Istok web, sans-serif;
+    font-display: center;
+    margin-right: 34px;
+    top:34px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 62px;
+    height: 62px;
+    border-radius: 50px;
+    top:13px ;
+    margin-right: 67px;
+    position: relative;
+}
+.profile-pic-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.status-dot {
+    position: absolute;
+    bottom: 5px;
+    left:44px;
+    width: 15px;
+    height: 15px;
+    background-color: #4CAF50 ; /* Green color to indicate online status */
+    border-radius: 50%;
+    opacity: 0.85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
