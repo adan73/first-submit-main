@@ -1,0 +1,23 @@
+{
+    "name": "pations",
+    
+    "patients":[
+        {
+    
+    "name": "Sid Tabar",
+    "photo": "images/sid_profile_pic.png"
+    },
+    {
+    
+        "name": "Sid Tfsfar",
+        "photo": "images/aya profile pic.png"
+        }
+
+    ]
+
+}
+  
+  
+
+
+
