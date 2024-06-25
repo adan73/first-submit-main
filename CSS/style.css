@@ -113,11 +113,11 @@ main{
     border-color:#004D40;
     border: 1px solid rgba(63, 63, 63, 0.3); /* Adjust the opacity for less prominence */
     box-sizing: border-box;
-    margin-top:84px;
+    top:55px;
     left: 65px; 
     font-family: Istok web, sans-serif;
     overflow: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .title_green_box{
@@ -167,7 +167,16 @@ main{
     position: relative;
 }
 
-
+.point-down-icon {
+    display: inline-block;
+    transform: rotate(90deg);
+    color: #1E7A6A;
+    font-weight: bold;
+    font-size:22px;
+    margin-top: 563px;
+    margin-left: 300px;
+    position: absolute;
+}
 
 
 .pationes_title{
