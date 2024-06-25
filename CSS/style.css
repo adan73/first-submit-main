@@ -124,8 +124,39 @@ main{
     width: 496px;
     height: 57px;
     background-color: rgba(170, 224, 208, 1);
-    
+    display: flex;
     position: relative;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 90px;
+    padding-left:7px;
+    background-color: #fff;
+    width: 130px;
+    height: 29px;
+    left:132px;
+    top:19px;
+    position: relative;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color:#ffffff00;
+    margin-left: 6px;
+    flex-grow: 1;
+    font-size: 18px;
+    font-family: Istok web, sans-serif;
+
+}
+
+.search-bar img{
+    width: 20px;
+    height: 20px;
+   
+    color: #2E7067;
 }
 
 .pationes_title{
@@ -181,4 +212,3 @@ main{
     font-size: 18px;
     color: rgba(0, 0, 0, 0.65);
   }
-
