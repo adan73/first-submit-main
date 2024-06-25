@@ -6,7 +6,8 @@
 
 header, main, footer, nav, aside, section, div  {
     display: block;
-    
+    font-family: Istok web, sans-serif;
+
 }
   
 .wrapper{
@@ -16,13 +17,13 @@ header, main, footer, nav, aside, section, div  {
     margin: 0;
     
 } 
-@media screen and(min-width:1200px){
+@media screen and(min-width:170px){
     .wrapper{
         padding: 0px;
         
     border: 50px;
     }
-    
+  
 }
 
 body {
@@ -90,19 +91,93 @@ header .logo img {
 
 
 
+main{
+    display: flex;
+       font-family: Istok web, sans-serif;
+
+}
 
 
 
 
+.list-group{
+    min-width: 40px;
+    width: 496px;
+    max-height: 520px;
 
+}
 
+.white_back{
+    width: 496px;
+    height: 520px;
+    border-color:#004D40;
+    border: 1px solid rgba(63, 63, 63, 0.3); /* Adjust the opacity for less prominence */
+    box-sizing: border-box;
+    margin-top:84px;
+    left: 65px; 
+    font-family: Istok web, sans-serif;
+    overflow: hidden;
+    position: absolute;
+}
 
+.title_green_box{
+    width: 496px;
+    height: 57px;
+    background-color: rgba(170, 224, 208, 1);
+    
+    position: relative;
+}
 
+.pationes_title{
+    background-color: #ffffff;
+    width: 120px;
+    height: 42px;
+    font-size:22px;
+    left: 20px;
+    top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f3f3f ;
+    position: relative;
+}
 
+#patione {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+  }
+  
+   
 
+  #patione img {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    margin-right: 20px;
+    margin-left: 31px;
+    position: relative;
+  }
 
-
-
-
-
+  #patione ul {
+    list-style-type: none;
+    padding-left:0px;
+  }
+  
+  #patione li {
+    border-color: #3f3f3f49;
+    border: 1px solid rgba(63, 63, 63, 0.155); /* Adjust the opacity for less prominence */
+    box-sizing: border-box;
+    width: 496px;
+ 
+    display: flex;
+    margin-bottom: -1px;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.65);
+  }
 
