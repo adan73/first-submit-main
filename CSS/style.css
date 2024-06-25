@@ -136,7 +136,7 @@ main{
     background-color: #fff;
     width: 130px;
     height: 29px;
-    left:132px;
+    left:159px;
     top:19px;
     position: relative;
 }
@@ -158,6 +158,17 @@ main{
    
     color: #2E7067;
 }
+
+.change-order-icon{
+    width: 46px;
+    height: 36px;
+    top: 16px;
+    left: 173px;
+    position: relative;
+}
+
+
+
 
 .pationes_title{
     background-color: #ffffff;
