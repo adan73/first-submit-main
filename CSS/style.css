@@ -155,6 +155,7 @@ main{
   #patione img {
     width: 57px;
     height: 57px;
+    opacity: 0.85;
     border-radius: 50%;
     margin-top: 5px;
     margin-bottom: 4px;
