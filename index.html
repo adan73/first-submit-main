@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <wrapper>
+    
        <header>
         <div class="logo ">
             <img src="images/logo photo.png" alt="logo" >
@@ -24,25 +24,34 @@
          </div>
         </div>
        </header>
-    
-       <main>
-		
-		    <div class="white_back" id="white_back">
-			    <div class="title_green_box">
-				    <div class="pationes_title">Patients</div>
-					<div class="search-bar">
-		         	    <img src="https://cdn2.iconfinder.com/data/icons/asic/50/.svg-5-1024.png">
-		        	    <input type="text" class="form-control" placeholder="Search">
-		            </div>
-					<img src="images/edit-order-icon.png" class="change-order-icon">
-			    </div>
-		        <div id="patione" class="list-group"></div>
-		    
-            </div><div class="point-down-icon">></div>
-			<div id="plus-cyrcle">+</div>
-       </main>
+    <main>
+       <div class="patients-container">
+		<div class="white_back" id="white_back">
+			<div class="title_green_box">
+				<div class="pationes_title">Patients</div>
+				<div class="search-bar">
+					<img src="https://cdn2.iconfinder.com/data/icons/asic/50/.svg-5-1024.png">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<img src="images/edit-order-icon.png" class="change-order-icon">
+			</div>
+			<div id="patione" class="list-group"></div>
+		</div>
+		<div class="point-down-icon">&gt;</div>
+		<div id="plus-cyrcle">+</div>
+	</div>
+
+	<div class="diagram-container">
+		<div class="diagram">
+			<div class="y-axis"></div>
+			<div class="x-axis">
+				<div class="results"></div>
+				<div class="months"></div>
+			</div>
+		</div>
+	</div>
+</main>
 	 
-    </wrapper>
 </body>
 </html>
 
