@@ -3,6 +3,7 @@ window.onload = () => {
   PrintPatientsList();
   build_the_progress();
   print_x();
+  print_patient_age_for_digram();
 }
 
 
@@ -100,3 +101,41 @@ function print_x(){
     resultsContainer.appendChild(monthResults);
 });
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  function print_patient_age_for_digram(){
+      const Patientage = document.querySelector('.patient-age');
+      const colors = ["#003D32", "#00665F", "#35978F"];
+      const ages = ["0-12", "12-25", "25+"];
+
+      const titleDiv = document.createElement('div');
+      titleDiv.textContent = "Patient Age";
+      titleDiv.classList.add('text-age');
+      Patientage.appendChild(titleDiv);
+
+      ages.forEach((age, index) => {
+          const ageContainer = document.createElement('div');
+          ageContainer.classList.add('age-container');
+
+          // Create and style the box
+          const ageBox = document.createElement('div');
+          ageBox.classList.add('age-box');
+          ageBox.style.backgroundColor = colors[index];
+
+          // Create the text element
+          const ageText = document.createElement('div');
+          ageText.classList.add('text-age');
+          ageText.textContent = age;
+
+          // Append the box and text to the container
+          ageContainer.appendChild(ageBox);
+          ageContainer.appendChild(ageText);
+
+          // Append the container to the main parent element
+          Patientage.appendChild(ageContainer);
+      });
+  }
+
+  print_patient_age_for_digram();
+});
