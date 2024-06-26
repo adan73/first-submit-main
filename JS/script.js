@@ -4,7 +4,7 @@ window.onload = () => {
   build_the_progress();
   print_x();
   print_patient_age_for_digram();
-  addEventListener();
+  BuildCalendar();
 }
 
 
@@ -134,40 +134,70 @@ function print_x(){
   }
 
 
+function BuildCalendar() {
+    const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   
- 
-function addEventListener(){
-
-  let currentDate = new Date();
-  let currentMonth = currentDate.getMonth();
-  let currentYear = currentDate.getFullYear();
-
-  renderCalendar(currentYear, currentMonth);
-
-  prevBtn.addEventListener('click', () => changeMonth(-1));
-  nextBtn.addEventListener('click', () => changeMonth(1));
-}
-
-function renderCalendar(year, month) {
-
-  const calendarDates = document.getElementById('calendar-dates');
-  const monthYearElement = document.querySelector('.month-year');
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
-  const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
-  const months = ['January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'];
-
-
-  monthYearElement.textContent = `${months[month]} ${year}`;
-  const wh=document.getElementById('weekday-header');
-  wh.innerHTML = '';
-  calendarDates.innerHTML = '';
-
-  weekdays.forEach(day => {
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+  
+    const calendarDates = document.getElementById('calendar-dates');
+    const monthYearElement = document.querySelector('.month-year');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+  
+    PrintTheDaysInMonthCalendar(currentYear, currentMonth);
+  
+    prevBtn.addEventListener('click', () => changeMonth(-1));
+    nextBtn.addEventListener('click', () => changeMonth(1));
+  
+  function PrintTheDaysInMonthCalendar(year, month) {
+    monthYearElement.textContent = `${months[month]} ${year}`;
+    const wh = document.getElementById('weekday-header');
+    wh.innerHTML = '';
+    calendarDates.innerHTML = '';
+    weekdays.forEach(day => {
       const weekdayElement = document.createElement('div');
       weekdayElement.textContent = day;
       wh.appendChild(weekdayElement);
-  });
-
+    });
+    printdays(year, month)
+  }  
   
+  function printdays(year, month){
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const startDay = (new Date(year, month, 1).getDay() + 6) % 7;
+    for (let i = 0; i < startDay; i++) {
+      const emptyCell = document.createElement("div");
+      emptyCell.classList.add("empty-cell");
+      calendarDates.appendChild(emptyCell);
+    }
+    for (let i = 1; i <= daysInMonth; i++) {
+      const dateCell = document.createElement("div");
+      dateCell.classList.add("date-cell");
+      if (
+        i === currentDate.getDate() &&
+        year === currentDate.getFullYear() &&
+        month === currentDate.getMonth()
+      ) {
+        dateCell.classList.add("current-date");
+      }
+      dateCell.textContent = i;
+      calendarDates.appendChild(dateCell);
+    }
+  }        
+  
+  function changeMonth(change) {
+    currentMonth += change;
+    if (currentMonth < 0) {
+      currentMonth = 11;
+      currentYear--;
+    } else 
+    if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+    }
+    PrintTheDaysInMonthCalendar(currentYear, currentMonth);
+    }
 }
