@@ -276,6 +276,32 @@ main section{
     margin-bottom: 11px;
 }
 
+.y-axis-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+.y-axis-line::before {
+    content: '';
+    height: 1px;
+    width: 340px;
+    background: #ADA9A9;
+    position: absolute;
+    margin-left:30px;
+    top:10px;
+}
+
+.y-title {
+    width: 86px;
+    height: 18px;
+    font-size: 16px;
+    top: 32px;
+    color: #000;
+    position: relative;
+}
+
 .x-axis {
   
     display: flex;
@@ -339,31 +365,6 @@ main section{
     font-size: 12px;
 }
 
-.y-axis-line {
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 10px;
-}
-
-.y-axis-line::before {
-    content: '';
-    height: 1px;
-    width: 340px;
-    background: #ADA9A9;
-    position: absolute;
-    margin-left:30px;
-    top:10px;
-}
-
-.y-title {
-    width: 86px;
-    height: 18px;
-    font-size: 16px;
-    top: 32px;
-    color: #000;
-    position: relative;
-}
 .x-title {
     width: 86px;
     height: 18px;
