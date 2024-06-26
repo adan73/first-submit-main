@@ -4,6 +4,7 @@ window.onload = () => {
   build_the_progress();
   print_x();
   print_patient_age_for_digram();
+  addEventListener();
 }
 
 
@@ -41,7 +42,6 @@ function PrintPatientsList(){
     const yAxisContainer = document.querySelector('.y-axis');
     
         var x=0;
-        // Generate Y-axis numbers
         for (let i = 100; i >= 10; i -= 10) {
           if(i==100)
           {
@@ -86,7 +86,6 @@ function print_x(){
     monthDiv.classList.add('month');
     monthsContainer.appendChild(monthDiv);
 
-    // Generate results for each month
     const monthResults = document.createElement('div');
     monthResults.classList.add('month-results');
     
@@ -103,7 +102,7 @@ function print_x(){
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+
   function print_patient_age_for_digram(){
       const Patientage = document.querySelector('.patient-age');
       const colors = ["#003D32", "#00665F", "#35978F"];
@@ -118,24 +117,57 @@ document.addEventListener('DOMContentLoaded', function() {
           const ageContainer = document.createElement('div');
           ageContainer.classList.add('age-container');
 
-          // Create and style the box
           const ageBox = document.createElement('div');
           ageBox.classList.add('age-box');
           ageBox.style.backgroundColor = colors[index];
 
-          // Create the text element
           const ageText = document.createElement('div');
           ageText.classList.add('text-age');
           ageText.textContent = age;
 
-          // Append the box and text to the container
           ageContainer.appendChild(ageBox);
           ageContainer.appendChild(ageText);
 
-          // Append the container to the main parent element
+        
           Patientage.appendChild(ageContainer);
       });
   }
 
-  print_patient_age_for_digram();
-});
+
+  
+ 
+function addEventListener(){
+
+  let currentDate = new Date();
+  let currentMonth = currentDate.getMonth();
+  let currentYear = currentDate.getFullYear();
+
+  renderCalendar(currentYear, currentMonth);
+
+  prevBtn.addEventListener('click', () => changeMonth(-1));
+  nextBtn.addEventListener('click', () => changeMonth(1));
+}
+
+function renderCalendar(year, month) {
+
+  const calendarDates = document.getElementById('calendar-dates');
+  const monthYearElement = document.querySelector('.month-year');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+  const months = ['January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'];
+
+
+  monthYearElement.textContent = `${months[month]} ${year}`;
+  const wh=document.getElementById('weekday-header');
+  wh.innerHTML = '';
+  calendarDates.innerHTML = '';
+
+  weekdays.forEach(day => {
+      const weekdayElement = document.createElement('div');
+      weekdayElement.textContent = day;
+      wh.appendChild(weekdayElement);
+  });
+
+  
+}
