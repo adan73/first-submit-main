@@ -14,7 +14,7 @@ header, main, footer, nav, aside, section, div  {
 @media screen and(min-width:768px){
    
    main {
-    flex-direction: row;/* Stack elements vertically on smaller screens */
+    flex-direction: row;
     }
 
     .diagram-container {
@@ -93,16 +93,17 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
-main section{
-    flex-grow: 1;
-    flex-basis: 200;
-    width: 500px;
+
+main #left_side{
+    margin-right: 177px;
 }
 
 
 .patients-container {
     margin-right: 35px;
     left: 65px;
+    flex-grow: 1;
+    flex-basis: 200;
     position: relative;
 }
 
@@ -250,9 +251,13 @@ main section{
     position: relative;
 }
 
-
+main #right_side{
+    padding-bottom:90px;
+}
 .diagram-container{
     display: flex;
+    flex-grow: 1;
+    flex-basis: 200;
     padding-bottom:80px;
     top:90px;
     left:45px;
@@ -386,7 +391,7 @@ main section{
 
 .patient-age {
     
-    top:-47px;
+    top:-46px;
     left:450px;
     width: 96px;
     position: absolute;
@@ -395,7 +400,7 @@ main section{
 .age-container {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Space between rows */
+    margin-top: 6px; 
     margin-left: 11px;
 }
 
@@ -425,7 +430,7 @@ main section{
     background-color: rgb(255, 255, 255);
     box-shadow: -2px 7px 7px #00665f83, 0px 4px 4px #00000040;
     overflow: hidden; /* Prevents overflow */
-
+    
     position: relative;
 }
 
@@ -479,4 +484,22 @@ main section{
 .month-year{
     font-size: 20px;
     font-weight: bold;
+}
+
+
+.date-cell, .empty-cell {
+    width: calc(100% / 7); 
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.date-cell {
+    cursor: pointer;
+}
+
+.date-cell:hover {
+    background-color: #e0e0e0;
 }
