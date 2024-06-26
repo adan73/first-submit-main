@@ -102,7 +102,6 @@ main section{
 
 
 .patients-container {
-
 }
 
 
@@ -115,7 +114,7 @@ main section{
     box-sizing: border-box;
     top:55px;
     font-family: Istok web, sans-serif;
-    margin-bottom: 177px;
+    margin-bottom: 100px;
     margin-right: 149px;
     overflow: hidden;
     position: relative;
@@ -254,13 +253,15 @@ main section{
 
 .diagram-container{
    
+
 }
  .diagram {
     display: flex;
-    justify-content: center;
+    top:-10px;
     align-items: flex-end;
+    justify-content: left;
     height: 400px; /* Example height */
-    width: 400px;
+    width: 100%;
     position: relative;
 }
 
@@ -373,8 +374,33 @@ main section{
     width: 86px;
     height: 18px;
     font-size: 16px;
-    left: 430px;
-    top:-30px;
+    left: 425px;
+    top:-28px;
     color: #000;
     position: relative;
+}
+
+.patient-age {
+    top:52px;
+    left:450px;
+    width: 96px;
+    position: absolute;
+}
+
+.age-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Space between rows */
+    margin-left: 11px;
+}
+
+.age-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; 
+}
+
+.text-age {
+    font-size: 16px; 
+    color: #000;
 }
