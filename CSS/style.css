@@ -93,18 +93,18 @@ main{
     display: flex;
     flex-wrap: wrap;
     
-    justify-content: space-evenly;
 
 }
 main section{
     flex-grow: 1;
     flex-basis: 200;
-    margin-right:15px;
 }
 
 
 .patients-container {
- 
+
+    margin-right: 177px;
+    left: 65px;
     position: relative;
 }
 
@@ -118,9 +118,6 @@ main section{
     box-sizing: border-box;
     top:55px;
     font-family: Istok web, sans-serif;
-    
-    margin-right: 0px;
-    
     overflow: hidden;
     position: relative;
 }
@@ -260,7 +257,7 @@ main section{
     display: flex;
 
     top:90px;
-    left:-30px;
+    left:45px;
     position: relative;
     align-content: flex-end;
 }
@@ -391,7 +388,7 @@ main section{
 
 .patient-age {
     
-    top:52px;
+    top:-47px;
     left:450px;
     width: 96px;
     position: absolute;
