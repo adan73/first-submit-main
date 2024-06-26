@@ -92,18 +92,16 @@ header .logo img {
 main{
     display: flex;
     flex-wrap: wrap;
-    
-
 }
 main section{
     flex-grow: 1;
     flex-basis: 200;
+    width: 500px;
 }
 
 
 .patients-container {
-
-    margin-right: 177px;
+    margin-right: 35px;
     left: 65px;
     position: relative;
 }
@@ -255,7 +253,7 @@ main section{
 
 .diagram-container{
     display: flex;
-
+    padding-bottom:80px;
     top:90px;
     left:45px;
     position: relative;
@@ -410,4 +408,75 @@ main section{
 .text-age {
     font-size: 16px; 
     color: #000;
+}
+
+
+
+.calendar-container {    
+    top:17px;
+    left: 42px;
+    width: 471px;
+    height: 176px;
+    padding: 20px;
+    padding-top: 10.498px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px ridge #cbcbcb;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px 7px 7px #00665f83, 0px 4px 4px #00000040;
+    overflow: hidden; /* Prevents overflow */
+
+    position: relative;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.prev{
+    margin-left: 384.42px;
+    color: #AFAFAF;
+    position: absolute;
+}
+
+.prev, .next {
+    cursor: pointer;
+}
+
+.calendar-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.calendar-weekdays div {
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.calendar-dates {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 50px); 
+    font-size: 14px;
+}
+
+.current-date {
+    background-color: #296A5F;
+    color: #fff;
+}
+.month-year{
+    font-size: 20px;
+    font-weight: bold;
 }
