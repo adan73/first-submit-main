@@ -1,0 +1,26 @@
+{
+    "name": "activity",
+    
+    
+    "schedule":[
+    {
+    "time": "10:00 - 12:00",
+    "the_activity": " crew meeting "
+    },
+    {
+    "time": "12:00 - 14:00",
+    "the_activity": " a meeting with patient Aya Abraham "
+    },  
+    {
+    "time": "14:00 - 16:00",
+    "the_activity": " edit patients information "
+    }
+
+    ]
+
+}
+  
+  
+
+
+
