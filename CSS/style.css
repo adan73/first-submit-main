@@ -95,7 +95,7 @@ main{
 }
 
 main #left_side{
-    margin-right: 177px;
+    margin-right: 95px;
 }
 
 
@@ -111,7 +111,7 @@ main #left_side{
 
 .white_back{
     width: 496px;
-    height: 520px;
+    height: 536px;
     border-color:#004D40;
     border: 1px solid rgba(63, 63, 63, 0.3); /* Adjust the opacity for less prominence */
     box-sizing: border-box;
@@ -334,6 +334,7 @@ main #right_side{
 
 .month {
     width: 70px;
+    height: 19px;
     justify-content:space-evenly;
     align-items: center;
     font-size: 16px;
@@ -392,7 +393,7 @@ main #right_side{
 .patient-age {
     
     top:-46px;
-    left:450px;
+    left:435px;
     width: 96px;
     position: absolute;
 }
@@ -400,7 +401,7 @@ main #right_side{
 .age-container {
     display: flex;
     align-items: center;
-    margin-top: 6px; 
+    margin-top: 8px; 
     margin-left: 11px;
 }
 
