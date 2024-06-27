@@ -5,6 +5,7 @@ window.onload = () => {
   print_x();
   print_patient_age_for_digram();
   BuildCalendar();
+  Show_User_Activity();
 }
 
 
@@ -200,4 +201,33 @@ function BuildCalendar() {
     }
     PrintTheDaysInMonthCalendar(currentYear, currentMonth);
     }
+}
+
+
+function Show_User_Activity(){
+  fetch('data/Orit_schedule_data.json')
+      .then(response => response.json())
+      .then(data => {
+        const activityInfo = document.getElementById('activity');
+        const ul = document.createElement('ul');
+  
+          data.schedule.forEach(activity => {
+          const li = document.createElement('li');
+  
+          const activitytime = document.createElement('div');
+          activitytime.textContent = activity.time;
+          activitytime.classList='time_text';
+          const theActivity = document.createElement('div');
+          theActivity.textContent = activity.the_activity;
+          theActivity.classList='active_text';
+  
+          li.appendChild(activitytime);
+          li.appendChild(theActivity);
+          ul.appendChild(li);
+        });
+        activityInfo.appendChild(ul);
+  
+  
+      })
+      .catch(error => console.error('Error fetching data:', error));
 }
