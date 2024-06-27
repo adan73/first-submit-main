@@ -252,7 +252,7 @@ main #left_side{
 }
 
 main #right_side{
-    padding-bottom:90px;
+    position: relative;
 }
 .diagram-container{
     display: flex;
@@ -503,4 +503,74 @@ main #right_side{
 
 .date-cell:hover {
     background-color: #e0e0e0;
+}
+
+
+
+.activity_container{
+    width:370px;
+    height: 107px;
+    border: 0px;
+    background-color: #DFF1F0;
+    display: flex;
+    justify-content: center;
+    top: 33px;
+    left: 120px;
+    margin-bottom: 43px;
+
+    position: relative;
+}
+
+#activity {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    left:14px ;
+    top:15px;
+    bottom: 15px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+.time_text{
+    width: 90px;
+    background-color: white;
+    justify-content: center;
+    box-shadow: -1px 4px 7px hsla(176, 100%, 20%, 0.25);
+    align-items: center;
+    font-size:14px;
+    color: #000;
+    margin-right: 18px;
+    
+    padding-left: 5px;
+ 
+
+}
+
+.active_text{
+    max-width: 240px;
+
+    background-color: white;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 8px;
+    border-left: 2px solid rgb(0, 0, 0);
+    box-shadow: -1px 4px 7px hsla(176, 100%, 20%, 0.25);
+    font-size: 14px;
+}
+
+   
+  #activity ul {
+    list-style-type: none;
+
+
+    
+  }
+  
+  #activity li {
+    display: flex;  /* Use flexbox to arrange time_text and active_text in a row */
+    align-items: center;  /* Vertically align items */
+ 
+    margin-bottom: 9px;
 }
