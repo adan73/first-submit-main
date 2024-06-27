@@ -38,6 +38,16 @@ body {
     min-height: 100vh;
     margin: 0;
   }
+  
+footer{
+    margin-left: 65px;
+}
+footer i{
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+    color: #598b83;
+}
 
 header .logo img {
     width:275.17px;
