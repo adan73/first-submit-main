@@ -632,3 +632,73 @@ main #right_side{
     width:358px;
     height: 32px;
   }
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form button{
+    height: 45px;
+    width: 115px;
+    
+}
+
+#check{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5PX;
+    color: #598B83;
+
+}
+
+#pinfo{
+    display: inline-flex; 
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #598B83;
+}
+
+#form_right{
+margin-right: 132px;
+margin-left: 50px;
+}
+
+
+#buttones{
+    width: 358px;
+}
+
+#form-left{
+    margin-left: 55px;
+}
+
+#form-left h3{
+    font-size: 16px;
+    color: #004D40;
+    margin-top: 18px;
+    width: 591px;
+}
+
+#optient_radio_cyrcle{
+    color: #004D40;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+
+}
+
+#optient_radio{
+    color: #004D40;
+    font-size: 16px;
+    width: 227px;
+    height: 22px;
+    display: inline-flex; 
+
+}
+
