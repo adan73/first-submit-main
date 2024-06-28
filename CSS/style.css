@@ -643,11 +643,6 @@ form {
     flex-wrap: wrap;
 }
 
-form button{
-    height: 45px;
-    width: 115px;
-    
-}
 
 #check{
     width: 20px;
@@ -671,7 +666,7 @@ form button{
 
 #form_right{
 margin-right: 132px;
-margin-left: 50px;
+margin-left: 0px;
 }
 
 
@@ -679,11 +674,11 @@ margin-left: 50px;
     width: 358px;
 }
 
-#form-left{
+#form_right{
     margin-left: 55px;
 }
 
-#form-left h3{
+#form_right h3{
     font-size: 16px;
     color: #004D40;
     margin-top: 6px;
@@ -772,3 +767,60 @@ div #optien-1 ,#optien-2, #optien-3, #optien-4{
     color: #2C665D;
 }
 
+.btn-done {
+    background-color: #2e7d32;
+    color:  #1E7A6A;
+}
+
+.buttons-done-cancel{
+    
+    left: 75px;
+    top: 674px;
+    width: 558px;
+    position: absolute;
+}
+.buttons-done-cancel button{
+    width: 110px;
+    height: 45px;
+    padding: 0px;
+    margin-right:132px;
+    color: #ffffff;
+    background-color: #3C7641;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+    box-shadow: -1px 4px 7px #ADD2CF;
+
+}
+
+.buttons-done-cancel #done-button:hover{
+    color: #ffffff;
+    background-color: #70ca78;
+}
+.buttons-done-cancel  #cancel-button{
+    color: #3BA295;
+    background-color: #ffffff;
+    border: 1px solid #D0D0D0;
+}
+
+ #form_left{
+ position: absolute;
+ left: 64px;
+ top:175px
+}
+
+
+ #form_right{
+    position: absolute;
+    left:477px;
+    top:172px
+}
+
+#page2{
+    position: absolute;
+    top: 790px;
+}
+
+#cancel-button:hover {
+    color: yellow;
+}
