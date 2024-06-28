@@ -677,8 +677,9 @@ a {
 .personal-info {
     margin-top: 20px;
 }
-.personal-info h3 ,.treatment-info h2{
+.personal-info h3 ,.treatment-info h2 ,.Dailyactivity h2{
     color: #2D8084;
+    font-weight: bold;
 }
 .info-line {
     display: flex; 
@@ -691,10 +692,12 @@ a {
     margin-left: 65px;
     width: 597px;
     height:300px;
+}
+.treatment-info ,.Dailyactivity {
     border: 1px solid #CBCBCB;
     box-shadow: rgba(117, 153, 154, 0.25) 0px 10px 20px, rgba(68, 113, 119, 0.3) 0px 6px 6px;
 }
-.treatment-info:hover {
+.treatment-info:hover,.Dailyactivity:hover {
     box-shadow: rgb(39, 73, 70) 0px 20px 30px -10px;
     cursor: pointer;
 }
@@ -712,6 +715,7 @@ a {
 }
 .methods h3 {
     color: #4EAFB5;
+    font-weight: bold;
 }
 .methods ul {
     list-style-type: none;
@@ -763,4 +767,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.Dailyactivity {
+    height: 637px;
+    width: 519px;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+.Dailyactivity h2 {
+    background:white;
+    position: absolute;
+    top: 106px;
+    left: 725px;
+    font-size: 22px;
 }
