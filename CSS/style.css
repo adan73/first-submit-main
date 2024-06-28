@@ -587,9 +587,19 @@ main #right_side{
 a {
     text-decoration:none;
 }
+.wrapper{
+    margin-top: 38px;
+    height: 100%;
+    width: 100%;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+}
 .patient-info {
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
 }
 .patient-info img {
     height: 143px;
@@ -598,11 +608,6 @@ a {
     overflow: hidden;
     box-sizing: border-box;
     border: 4px solid #296A5F;
-}
-.wrapper{
-    margin-left: 80px;
-    margin-top: 38px;
-    height: 100%;
 }
 .patient-details {
     display: flex; 
@@ -644,6 +649,9 @@ a {
     font-size: 28px;
     margin-left: 15px;
 }
+.material-icons:hover {
+    color: rgb(6, 60, 52); 
+}
 #contact-patient {
     margin-top: 66px;
     margin-left: 30px;
@@ -666,7 +674,7 @@ a {
 .personal-info {
     margin-top: 20px;
 }
-.personal-info h3 {
+.personal-info h3 ,.treatment-info h2{
     color: #2D8084;
 }
 .info-line {
@@ -674,4 +682,18 @@ a {
     align-items: flex-start;
     flex-direction: row;
     gap: 10px;
+}
+.treatment-info {
+    margin-top: 30px;
+    margin-left: 65px;
+    width: 597px;
+    height:300px;
+    border: 1px solid #CBCBCB;
+    box-shadow: rgba(117, 153, 154, 0.25) 0px 10px 20px, rgba(68, 113, 119, 0.3) 0px 6px 6px;
+}
+.treatment-info h2 {
+    background:white;
+    position: absolute;
+    top:430px;
+    left: 81px;
 }
