@@ -123,7 +123,7 @@ main #left_side{
     width: 496px;
     height: 536px;
     border-color:#004D40;
-    border: 1px solid rgba(63, 63, 63, 0.3); /* Adjust the opacity for less prominence */
+    border: 1px solid rgba(63, 63, 63, 0.3); 
     box-sizing: border-box;
     top:55px;
     font-family: Istok web, sans-serif;
@@ -579,8 +579,56 @@ main #right_side{
   }
   
   #activity li {
-    display: flex;  /* Use flexbox to arrange time_text and active_text in a row */
-    align-items: center;  /* Vertically align items */
+    display: flex;  
+    align-items: center; 
  
     margin-bottom: 9px;
 }
+
+.mb-3 .red_start{
+    color: #F55549;
+    margin-top: -8px;
+    margin-left: 3px;
+    position: absolute;
+    font-size: 16px;
+}
+.mb-3 label{
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 0px;
+    color: #004D40;
+}
+.mb-3 input {
+    margin-left: 10px;
+    margin-top: -5px;   
+    width: 133px;
+    height: 35px;
+    border: 1px solid #bfbfbfd0; 
+}
+.mb-3 #id{
+    width: 185px;
+}
+
+#group_form_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.mb-3 {
+    margin-right: 32px;
+  }
+
+  .mb-3 select {
+    width: 133px;
+    height: 35px;
+    border: 1px solid #bfbfbfd0;
+    font-size: 16px;
+    margin-top: -5px;
+  }
+
+  .mb-3 #email{
+    width:358px;
+    height: 32px;
+  }
