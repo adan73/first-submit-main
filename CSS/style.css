@@ -632,6 +632,10 @@ main #right_side{
     width:358px;
     height: 32px;
   }
+  .mb-3 #Address{
+    margin-bottom: 15px;
+    position: relative;
+  }
 
 
 form {
@@ -648,6 +652,7 @@ form button{
 #check{
     width: 20px;
     height: 20px;
+    border: 3px solid #598B83;
     margin-right: 10px;
     vertical-align: middle;
     margin-bottom: 5PX;
@@ -681,12 +686,14 @@ margin-left: 50px;
 #form-left h3{
     font-size: 16px;
     color: #004D40;
-    margin-top: 18px;
+    margin-top: 6px;
     width: 591px;
+    max-height: 57px;
 }
 
-#optient_radio_cyrcle{
+#optient_radio_cyrcle {
     color: #004D40;
+    font-weight: 14px;
     width: 14px;
     height: 14px;
     vertical-align: middle;
@@ -696,9 +703,23 @@ margin-left: 50px;
 #optient_radio{
     color: #004D40;
     font-size: 16px;
-    width: 227px;
+    width: 349px;
     height: 22px;
     display: inline-flex; 
 
+}
+
+div #optien-5-1{
+    margin-bottom: 21px;
+}
+
+
+div #optien-5-2{
+    margin-bottom: 21px;
+}
+
+
+div #optien-1 ,#optien-2, #optien-3, #optien-4{
+    margin-bottom: 3px;
 }
 
