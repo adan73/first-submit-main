@@ -256,7 +256,7 @@ main #left_side{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:40px ;
+    font-size:20px ;
     color: #ffffff;
     position: relative;
 }
@@ -710,16 +710,65 @@ margin-left: 50px;
 }
 
 div #optien-5-1{
-    margin-bottom: 21px;
+    margin-bottom: 30px;
 }
 
 
 div #optien-5-2{
-    margin-bottom: 21px;
+    margin-bottom: 0px;
 }
 
 
 div #optien-1 ,#optien-2, #optien-3, #optien-4{
     margin-bottom: 3px;
+}
+
+.file-conainer {
+    border: 1px solid rgba(44, 102, 93, 0.6);
+    border-radius: 6px;
+    left: -15px;
+    top: -30px;
+    width: 569px;
+    height: 134px;
+    position: relative;
+}
+
+.file-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.file-header #title{
+    font-size: 16px;
+    color: #2C665D;
+    font-weight: bold;
+    width: 98px;
+    height: 24px;
+    align-items: center;
+    padding:1px;
+    margin-left: 8px;
+   position: relative;
+}
+.file-header div{
+    margin-right: 10px;
+    margin-top:12px ;
+}
+.file-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-body i {
+   width: 23.96px;
+   height: 24.01px;
+   color: rgba(44, 102, 93, 0.6);
+   font-size: 15px;
+   top: 10px;
+   position: relative;
+}
+.icon {
+    font-size: 17px;
+    color: #2C665D;
 }
 
