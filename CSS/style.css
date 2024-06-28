@@ -587,6 +587,10 @@ main #right_side{
 a {
     text-decoration:none;
 }
+.patient-info {
+    display: flex;
+    flex-direction: column;
+}
 .patient-info img {
     height: 143px;
     width: 143px;
@@ -603,6 +607,7 @@ a {
 .patient-details {
     display: flex; 
     align-items:flex-start; 
+    
 }
 
 .patient-details img {
@@ -620,28 +625,36 @@ a {
 }
 .ayaInfo h2 {
     color: #296A5F;
+    font-weight: bold;
+    font-size: 22px;
 }
-.ayaInfo p {
+.ayaInfo p ,.personal-info p {
     color: #333333;
+    font-size: 19px;
+    margin-top: 5px;
 }
-#age ,#adhd-stage {
+#age ,#adhd-stage ,#id ,#hmo ,#email ,#phone ,#address {
     color:#575757;
+}
+.edit-patient{
+    display: flex; 
 }
 .material-icons {
     color:#296A5F;
-    height: 20px;
-    margin-top: 49px;
-    width: 20px;
+    font-size: 28px;
+    margin-left: 15px;
 }
 #contact-patient {
     margin-top: 66px;
-    margin-left: 15px;
+    margin-left: 30px;
     height:40px;
     width: 166px;
     background-color: white;
     color: #959595;
     border: 1px solid #959595; 
     border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
 }
 #contact-patient:hover {
     background-color: #adc3bf;
@@ -649,4 +662,16 @@ a {
     font-size: 16px;
     border-color: #296A5F;
     box-shadow: 0 12px 16px 0 rgba(46, 75, 75, 0.19), 0 17px 50px 0 rgba(67, 148, 147, 0.19);
+}
+.personal-info {
+    margin-top: 20px;
+}
+.personal-info h3 {
+    color: #2D8084;
+}
+.info-line {
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
 }
