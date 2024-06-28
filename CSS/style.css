@@ -574,3 +574,49 @@ main #right_side{
  
     margin-bottom: 9px;
 }
+a {
+    text-decoration:none;
+}
+.patient-info img {
+    height: 143px;
+    width: 143px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 4px solid #296A5F;
+}
+main{
+    margin-left: 80px;
+    margin-top: 38px;
+    height: 100%;
+}
+.patient-details {
+    display: flex; 
+    align-items: center; 
+}
+
+.patient-details img {
+    height: 143px;
+    width: 143px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 4px solid #296A5F;
+    margin-right: 20px; 
+}
+.ayaInfo {
+    flex: 1; 
+}
+.ayaInfo h2 {
+    color: #296A5F;
+}
+.ayaInfo p {
+    color: #333333;
+}
+#age ,#adhd-stage {
+    color:#575757;
+}
+.material-icons {
+    color:#296A5F;
+    margin-top: 87px;
+}

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVNOISE Patient Information</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <div class="logo ">
-              <a href="index.html"><img src="images/logo photo.png" alt="AVNOISE Logo"></a>
+                <a href="index.html"><img src="images/logo photo.png" alt="AVNOISE Logo"></a>
             </div>
             <div class="profile">
                 <div class="profile-text">Hi,Orit</div>
@@ -22,7 +25,28 @@
             </div>
         </header>
         <main>
+            <section class="patient-info">
+                <div class="patient-details">
+                    <img src="images/aya profile pic.png" alt="Aya Abraham picture" id="profile-picture">
+                    <div class="ayaInfo">
+                        <h2 id="name">Aya Abraham</h2>
+                        <p>Age: <span id="age">22</span></p>
+                        <p>ADHD Stage: <span id="adhd-stage"> Inattention</span></p>
+                    </div>
+                    <div id="edit-patient"><i class="material-icons">edit</i></div>
+                    <button id="contact-patient">Contact Patient</button>
+                </div>
+                <div id="personal-info">
+                    <h3>Personal information</h3>
+                    <p>ID: <span id="id"></span></p>
+                    <p>HMO: <span id="hmo"></span></p>
+                    <p>Email: <span id="email"></span></p>
+                    <p>Phone: <span id="phone"></span></p>
+                    <p>Address: <span id="address"></span></p>
+                </div>
+            </section>
         </main>
     </div>
 </body>
+
 </html>
