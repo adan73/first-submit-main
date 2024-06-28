@@ -588,7 +588,6 @@ a {
     text-decoration:none;
 }
 .wrapper{
-    margin-top: 38px;
     margin-bottom: 30px;
     height: 100%;
     width: 100%;
@@ -596,6 +595,7 @@ a {
 .information {
     display: flex;
     flex-direction: column;
+    margin-top: 38px;
 }
 .patient-info {
     display: flex;
@@ -687,7 +687,7 @@ a {
     gap: 10px;
 }
 .treatment-info {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 65px;
     width: 597px;
     height:300px;
@@ -701,7 +701,7 @@ a {
 .treatment-info h2 {
     background:white;
     position: absolute;
-    top:430px;
+    top:440px;
     left: 81px;
     font-size: 22px;
 }
@@ -722,12 +722,12 @@ a {
 }
 #editIcon {
     position: absolute;
-    top: 451px;
+    top: 461px;
     left: 615px;
 }
 .improvement {
     position: absolute;
-    top: 567px;
+    top: 577px;
     left: 521px;
     display: flex;
     flex-direction: column;
