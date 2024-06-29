@@ -9,6 +9,7 @@ window.onload = () => {
 }
 
 
+
 function PrintPatientsList(){
 
     fetch('data/patients_data.json')
@@ -134,6 +135,10 @@ function print_x(){
       });
   }
 
+  document.addEventListener('DOMContentLoaded', (event) => {
+    BuildCalendar();
+    
+});
 
 function BuildCalendar() {
     const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
@@ -231,3 +236,56 @@ function Show_User_Activity(){
       })
       .catch(error => console.error('Error fetching data:', error));
 }
+
+
+function initializeForm() {
+ 
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  localStorage.setItem("fname", fname);
+  localStorage.setItem("lname", lname);
+
+  window.location.href = "index.html";
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var form = document.getElementById("form");
+  if (form) {
+      form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          initializeForm();
+      });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var resultElement = document.getElementById("result");
+  if (resultElement) {
+      var submittedFname = localStorage.getItem("fname");
+      var submittedLname = localStorage.getItem("lname");
+      if (submittedFname && submittedLname) {
+
+        var nameContainer = document.createElement('div');
+          nameContainer.classList.add('name-container');
+
+          var firstLetter = submittedFname.charAt(0).toUpperCase();
+          var circle = document.createElement('div');
+          circle.textContent = firstLetter;
+          circle.classList.add('name-circle');
+
+          var nameText = document.createElement('span');
+          nameText.textContent = submittedFname + " " + submittedLname;
+          nameText.classList.add('name-text');
+
+          nameContainer.appendChild(circle);
+          nameContainer.appendChild(nameText);
+
+          resultElement.appendChild(nameContainer);
+
+          localStorage.removeItem("fname");
+          localStorage.removeItem("lname");
+      }
+  }
+});
+
