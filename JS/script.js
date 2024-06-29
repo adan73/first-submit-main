@@ -242,6 +242,21 @@ function initializeForm() {
  
   var fname = document.getElementById("fname").value;
   var lname = document.getElementById("lname").value;
+  var id = document.getElementById("id").value;
+  var gender = document.getElementById("gender").value;
+  var HMO = document.getElementById("HMO").value;
+  var ADHD = document.getElementById("ADHD").value;
+  var Age = document.getElementById("Age").value;
+  var Phone = document.getElementById("Phone").value;
+  var email = document.getElementById("email").value;
+
+
+  if (!fname || !lname || !id|| !gender|| !HMO|| !ADHD|| !Age|| !Phone|| !email) {
+    alert("Please fill out all required fields.");
+    return; 
+  }
+
+
   localStorage.setItem("fname", fname);
   localStorage.setItem("lname", lname);
 
