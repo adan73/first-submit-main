@@ -131,6 +131,9 @@ function print_patient_age_for_digram() {
   });
 }
 
+document.addEventListener('DOMContentLoaded',(event) => {
+  BuildCalendar();
+});
 
 function BuildCalendar() {
   const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];

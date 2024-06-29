@@ -777,12 +777,12 @@ a {
 .Dailyactivity h2 {
     background:white;
     position: absolute;
-    top: 106px;
+    top: 105px;
     left: 725px;
     font-size: 22px;
 }
 .activity-Icons {
-    margin-top: 573px;
+    margin-top: 55.531px;
     margin-left: 110px;
     display: flex; 
     flex-direction: row;
@@ -806,4 +806,34 @@ a {
 }
 #WalkingIcon:hover {
     content: url("../images/walking_icon_green.png");
+}
+.patient-calendar-container {    
+    top: 30px;
+    left: 27px;
+    width: 435.02px;
+    height: 238.31px;
+    padding: 10px;
+    padding-top: 10.498px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px ridge #cbcbcb;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden; 
+    position: relative;
+}
+.patient-calendar-container .calendar-header {
+    margin-top: 14.811px;
+    margin-right: 15px;
+    font-size: 24px;
+    margin-left: 5px;
+}
+.patient-calendar-container .calendar-dates {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    height: 147.235px;
+    font-size: 14px;
+}
+.patient-calendar-container .prev {
+    margin-left: 345.42px;
 }
