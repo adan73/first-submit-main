@@ -1,5 +1,5 @@
 window.onload = () => {
-    initializePage();
+    initializePage(); 
 }
 
 function initializePage() {
@@ -7,7 +7,7 @@ function initializePage() {
     fetch('data/patients_data.json')
         .then(response => response.json())
         .then(data => initializeinfo(data))
-        .catch(error => console.error('fetching data:', error));
+        .catch(error => console.error('Error fetching data:', error));
 }
 
 function initializeinfo(data) {
@@ -29,17 +29,53 @@ function initializeinfo(data) {
 
         const treatmentMethods = document.querySelector('.methods ul');
         patient.treatment.methods.forEach(method => {
-          const li = document.createElement('li');
-          li.textContent = method;
-          treatmentMethods.appendChild(li);
+            const li = document.createElement('li');
+            li.textContent = method;
+            treatmentMethods.appendChild(li);
         });
-        document.getElementById('current').textContent = patient.treatment.improvement.current;
-        document.getElementById('target').textContent = patient.treatment.improvement.target;
+        const current = patient.treatment.improvement.current;
+        const target = patient.treatment.improvement.target;
+        Buildchart(current,target);
     } else {
         console.error('patient not found');
     }
 }
-
+function Buildchart(current,target){
+    var chrt = document.getElementById("chartId").getContext("2d");
+    var chartId = new Chart(chrt, {
+        type: 'doughnut',
+        data: {
+            labels: [],
+            datasets: [{
+                label:'improvment',
+                data: [current, target],
+                backgroundColor: ['#7FB6A2', '#D3F0E6'],
+                hoverOffset: 5
+            }],
+        },
+        options: {
+            responsive: false,
+            plugins: {
+                tooltip: {
+                    enabled: false,  
+                },
+                datalabels: {
+                    color: function(context) {
+                        var value = context.dataset.data[context.dataIndex];
+                        return value === target ? '#646464' : '#FFFFFF'; 
+                    }, 
+                    anchor: 'center',  
+                    align: 'center',   
+                    formatter: (value) => value,  
+                    font: {
+                        size: 16,  
+                    },
+                },
+            },
+        },
+        plugins: [ChartDataLabels],  
+    });
+}
 
 function BuildCalendar() {
     const weekdays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
@@ -94,7 +130,6 @@ function BuildCalendar() {
             calendarDates.appendChild(dateCell);
         }
     }
-
     function changeMonth(change) {
         currentMonth += change;
         if (currentMonth < 0) {

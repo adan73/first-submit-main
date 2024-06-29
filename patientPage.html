@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/scriptPage2.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+    <script src="JS/scriptPatientPage.js"></script>
 </head>
 
 <body>
@@ -64,14 +68,8 @@
                     </div>
                     <div class="improvement">
                         <span>Improvement</span>
-                        <div class="improvement-chart">
-                            <div class="circleShape">
-                                <div>
-                                    <span id="target"></span>
-                                    <span id="current"></span>
-                                </div>
-                            </div>
-                        </div>
+                        <canvas id="chartId" aria-label="chart" height="114.34px" width="114.34px"></canvas>
+                    </div>
             </section>
             <section class="Dailyactivity">
                 <h2>Daily Activity</h2>
@@ -86,7 +84,7 @@
                         <div class="calendar-dates" id="calendar-dates"></div>
                     </div>
                 </div>
-                <div class="schedule">   
+                <div class="schedule">
 
                 </div>
                 <div class="activity-Icons">
