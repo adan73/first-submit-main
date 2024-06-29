@@ -656,8 +656,19 @@ form {
     display: flex;
     flex-wrap: wrap;
 }
-
-
+#form_title{
+ width: 346px;
+ height: 74px;
+ font-size: 20px;
+ font-weight: bold;
+ color:#0C6265 ;
+ display:flex ;
+ justify-content: center;
+ align-items: center;
+ margin-top: 30px;
+ left:8px;
+ position: absolute;
+}
 #check{
     width: 20px;
     height: 20px;
