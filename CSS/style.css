@@ -262,6 +262,10 @@ main #left_side{
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 main #right_side{
     position: relative;
 }
