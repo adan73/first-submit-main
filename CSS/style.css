@@ -781,3 +781,29 @@ a {
     left: 725px;
     font-size: 22px;
 }
+.activity-Icons {
+    margin-top: 573px;
+    margin-left: 110px;
+    display: flex; 
+    flex-direction: row;
+    gap: 5px; 
+}
+.activity-Icons i {
+    margin-left: 15px;
+    color: #A8C2BE;
+    font-size: 35px;
+}
+.activity-Icons i:hover {
+    color: #004D40;
+}
+.activity-Icons img {
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;;
+}
+#meditationIcon:hover {
+   content: url("../images/self_improvement_icon_green.png");
+}
+#WalkingIcon:hover {
+    content: url("../images/walking_icon_green.png");
+}
