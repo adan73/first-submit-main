@@ -536,6 +536,15 @@ main #right_side{
     position: relative;
 }
 
+.activity_container i{
+    color: #296A5F;
+    width: 20px;
+    height: 20px;
+    top:6px;
+    left: 340px;
+    position: absolute;
+}
+
 #activity {
     display: flex;
     flex-direction: column;
