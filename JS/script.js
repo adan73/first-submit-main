@@ -65,9 +65,7 @@ function build_the_progress() {
       xtitle.classList.add('x-title');
       yAxisContainer.appendChild(xtitle);
     }
-
   }
-
 }
 
 

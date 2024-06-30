@@ -650,7 +650,13 @@ a {
     font-size: 28px;
     margin-left: 15px;
 }
-.material-icons:hover {
+#trash-icon {
+    color:#296A5F;
+    font-size: 20px;
+    margin-left: 6px;
+    padding-top: 4px;
+}
+.material-icons:hover ,#trash-icon:hover {
     color: rgb(6, 60, 52); 
     cursor: pointer;
 }

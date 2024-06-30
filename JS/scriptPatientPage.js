@@ -1,5 +1,6 @@
+let patient = null
 window.onload = () => {
-    initializePage(); 
+    initializePage();
 }
 
 function initializePage() {
@@ -12,7 +13,8 @@ function initializePage() {
 
 function initializeinfo(data) {
     const patients = data.patients;
-    const patient = patients.find(patient => patient.id === '234567891');
+    const p = patients.find(patient => patient.id === '234567891');
+    patient = p
     if (patient) {
 
         document.getElementById('profile-picture').src = patient.photo;
@@ -35,19 +37,20 @@ function initializeinfo(data) {
         });
         const current = patient.treatment.improvement.current;
         const target = patient.treatment.improvement.target;
-        Buildchart(current,target);
+        Buildchart(current, target);
     } else {
         console.error('patient not found');
     }
 }
-function Buildchart(current,target){
+
+function Buildchart(current, target) {
     var chrt = document.getElementById("chartId").getContext("2d");
     var chartId = new Chart(chrt, {
         type: 'doughnut',
         data: {
             labels: [],
             datasets: [{
-                label:'improvment',
+                label: 'improvment',
                 data: [current, target],
                 backgroundColor: ['#7FB6A2', '#D3F0E6'],
                 hoverOffset: 5
@@ -57,23 +60,23 @@ function Buildchart(current,target){
             responsive: false,
             plugins: {
                 tooltip: {
-                    enabled: false,  
+                    enabled: false,
                 },
                 datalabels: {
-                    color: function(context) {
+                    color: function (context) {
                         var value = context.dataset.data[context.dataIndex];
-                        return value === target ? '#646464' : '#FFFFFF'; 
-                    }, 
-                    anchor: 'center',  
-                    align: 'center',   
-                    formatter: (value) => value,  
+                        return value === target ? '#646464' : '#FFFFFF';
+                    },
+                    anchor: 'center',
+                    align: 'center',
+                    formatter: (value) => value,
                     font: {
-                        size: 16,  
+                        size: 16,
                     },
                 },
             },
         },
-        plugins: [ChartDataLabels],  
+        plugins: [ChartDataLabels],
     });
 }
 
@@ -143,4 +146,3 @@ function BuildCalendar() {
         PrintTheDaysInMonthCalendar(currentYear, currentMonth);
     }
 }
-
