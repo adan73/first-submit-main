@@ -699,7 +699,6 @@ a {
 }
 .treatment-info:hover,.Dailyactivity:hover {
     box-shadow: rgb(39, 73, 70) 0px 20px 30px -10px;
-    cursor: pointer;
 }
 .treatment-info h2 {
     background:white;
@@ -765,6 +764,7 @@ a {
 }
 .activity-Icons i:hover {
     color: #004D40;
+    cursor: pointer;
 }
 .activity-Icons img {
     width: 35px;
@@ -773,9 +773,11 @@ a {
 }
 #meditationIcon:hover {
    content: url("../images/self_improvement_icon_green.png");
+   cursor: pointer;
 }
 #WalkingIcon:hover {
     content: url("../images/walking_icon_green.png");
+    cursor: pointer;
 }
 .patient-calendar-container {    
     top: 30px;
