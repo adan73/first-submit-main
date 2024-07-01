@@ -1,38 +1,61 @@
 {
     "name": "pations",
-    
-    "patients":[
-    {
-    "name": "Sid Tabar",
-    "photo": "https://www.iemsecure.com/static/media/profile.d8f6ea9c.png"
-    },
-    {
-    "name": "Aya Abraham",
-    "photo": "images/aya profile pic.png"
-    },
-    {
-    "name": "Rohan sharma",
-    "photo": "https://www.farjo.com/app/uploads/2023/02/mjustin-chen-J7Cf1Gch49E-unsplash-e1676635809339-1024x1014.jpg.webp"
-    },
-    {
-    "name": "Aseel Matar",
-    "photo": "https://utahpoolguy.com/wp-content/uploads/2021/03/testi_pic.jpg"
-    },
-    {
-    "name": "Sam Kapur",
-    "photo": "https://res.cloudinary.com/dmabeivkl/image/upload/w_800,fl_lossy,f_auto/v1644077750/main-image/hatak474vhkmjp1wxkbz.png"
-    },
-    {
-    "name": "Amina Maleh",
-    "photo": "https://cdn.kidsit.com/contributors/alison-stegert.jpg"
-    }
-
-
+    "patients": [
+        {
+            "name": "Sid Tabar",
+            "photo": "https://www.iemsecure.com/static/media/profile.d8f6ea9c.png"
+        },
+        {
+            "name": "Aya Abraham",
+            "photo": "images/aya profile pic.png",
+            "age": 22,
+            "adhdStage": "Inattention",
+            "id": "234567891",
+            "hmo": "Leumit",
+            "email": "laya.abraham@gmail.com",
+            "phone": "0535675845",
+            "address": "Ramat Gan",
+            "treatment": {
+                "methods": [
+                    "Take a high-quality multivitamin and mineral supplement every day.",
+                    "Exercise daily for 30-45 minutes.",
+                    "Limit screen time.",
+                    "Jot down ideas as they come to you."
+                ],
+                "improvement": {
+                    "current": 6,
+                    "target": 4
+                }
+            },
+            "dailyActivity": {
+                "date": "January 22, 2024",
+                "events": [
+                    {
+                        "time": "8:00",
+                        "description": "uni-lectures"
+                    },
+                    {
+                        "time": "13:00",
+                        "description": "meeting with oriyat"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Rohan sharma",
+            "photo": "https://www.farjo.com/app/uploads/2023/02/mjustin-chen-J7Cf1Gch49E-unsplash-e1676635809339-1024x1014.jpg.webp"
+        },
+        {
+            "name": "Aseel Matar",
+            "photo": "https://utahpoolguy.com/wp-content/uploads/2021/03/testi_pic.jpg"
+        },
+        {
+            "name": "Sam Kapur",
+            "photo": "https://res.cloudinary.com/dmabeivkl/image/upload/w_800,fl_lossy,f_auto/v1644077750/main-image/hatak474vhkmjp1wxkbz.png"
+        },
+        {
+            "name": "Amina Maleh",
+            "photo": "https://cdn.kidsit.com/contributors/alison-stegert.jpg"
+        }
     ]
-
 }
-  
-  
-
-
-
