@@ -29,40 +29,45 @@
       </div>
     </header>
     <main>
-      <section id="left_side">
-        <div class="patients-container">
-          <div class="white_back" id="white_back">
-            <div class="title_green_box">
-              <div class="pationes_title">Patients</div>
-              <div class="search-bar">
-                <img
-                  src="https://cdn2.iconfinder.com/data/icons/asic/50/.svg-5-1024.png"
-                />
-                <input type="text" class="form-control" placeholder="Search" />
-              </div>
-              <img src="images/edit-order-icon.png" class="change-order-icon" />
-            </div>
-            <div id="patione"></div>
-          </div>
-          <div class="point-down-icon">&gt;</div>
-          <div id="plus-cyrcle">+</div>
-        </div>
-      </section>
-      <section id="right_side">
-        <div class="diagram-container">
-          <div class="diagram">
-            <div class="y-axis"></div>
-            <div class="x-axis">
-              <div class="results"></div>
-              <div class="months"></div>
-            </div>
-            <div class="patient-age">
-              <div class="age-container"></div>
-            </div>
-          </div>
-        </div>
-        <div class="calendar-container">
-          <div class="calendar-header">
+		<section id="left_side">
+       <div class="patients-container">
+		<div class="white_back" id="white_back">
+			<div class="title_green_box">
+				<div class="pationes_title">Patients</div>
+				<div class="search-bar">
+					<img src="https://cdn2.iconfinder.com/data/icons/asic/50/.svg-5-1024.png">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<img src="images/edit-order-icon.png" class="change-order-icon">
+			</div>
+			<div id="patione" >
+			<div id="result" ></div>
+		    </div>
+		</div>
+		<div class="point-down-icon">&gt;</div>
+		<a href="patione_form.html" >
+		<i class="fas fa-plus icon"id="plus-cyrcle"></i>
+	    </a>
+	</div>
+</section>
+<section id="right_side">
+	<div class="diagram-container">
+		
+		<div class="diagram">
+			
+			<div class="y-axis"></div>
+			<div class="x-axis">
+				<div class="results"></div>
+				<div class="months"></div>
+			</div>
+			<div class="patient-age">
+				<div class="age-container"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="calendar-container">
+        <div class="calendar-header">
             <span class="month-year"></span>
             <span class="prev">&#10094;</span>
             <span class="next">&#10095;</span>
@@ -72,14 +77,16 @@
             <div class="calendar-dates" id="calendar-dates"></div>
           </div>
         </div>
-        <div class="activity_container">
-          <div id="activity"></div>
-        </div>
-      </section>
-    </main>
-    <footer>
-        <i class="fa-solid fa-circle-question fa-xl"></i>
-        <i class="fa-solid fa-gear fa-xl"></i>
-    </footer>
-  </body>
+	</div>
+	<div class="activity_container">
+		<i class="fa-solid fa-pen"></i>
+		<div id="activity"></div>
+	</div>
+</section>
+</main>
+	 <footer>
+		<i class="fa-solid fa-circle-question fa-xl"></i>
+		<i class="fa-solid fa-gear fa-xl"></i>
+	 </footer>
+</body>
 </html>

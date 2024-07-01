@@ -148,6 +148,10 @@ function print_patient_age_for_digram() {
     Patientage.appendChild(ageContainer);
   });
 }
+  document.addEventListener('DOMContentLoaded', (event) => {
+    BuildCalendar();
+    
+});
 
 function BuildCalendar() {
   const weekdays = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
@@ -229,28 +233,98 @@ function BuildCalendar() {
   }
 }
 
-function Show_User_Activity() {
-  fetch("data/Orit_schedule_data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const activityInfo = document.getElementById("activity");
-      const ul = document.createElement("ul");
-
-      data.schedule.forEach((activity) => {
-        const li = document.createElement("li");
-
-        const activitytime = document.createElement("div");
-        activitytime.textContent = activity.time;
-        activitytime.classList = "time_text";
-        const theActivity = document.createElement("div");
-        theActivity.textContent = activity.the_activity;
-        theActivity.classList = "active_text";
-
-        li.appendChild(activitytime);
-        li.appendChild(theActivity);
-        ul.appendChild(li);
-      });
-      activityInfo.appendChild(ul);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
+function Show_User_Activity(){
+  fetch('data/Orit_schedule_data.json')
+      .then(response => response.json())
+      .then(data => {
+        const activityInfo = document.getElementById('activity');
+        const ul = document.createElement('ul');
+  
+          data.schedule.forEach(activity => {
+          const li = document.createElement('li');
+  
+          const activitytime = document.createElement('div');
+          activitytime.textContent = activity.time;
+          activitytime.classList='time_text';
+          const theActivity = document.createElement('div');
+          theActivity.textContent = activity.the_activity;
+          theActivity.classList='active_text';
+  
+          li.appendChild(activitytime);
+          li.appendChild(theActivity);
+          ul.appendChild(li);
+        });
+        activityInfo.appendChild(ul);
+  
+  
+      })
+      .catch(error => console.error('Error fetching data:', error));
 }
+
+
+function initializeForm() {
+ 
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var id = document.getElementById("id").value;
+  var gender = document.getElementById("gender").value;
+  var HMO = document.getElementById("HMO").value;
+  var ADHD = document.getElementById("ADHD").value;
+  var Age = document.getElementById("Age").value;
+  var Phone = document.getElementById("Phone").value;
+  var email = document.getElementById("email").value;
+
+
+  if (!fname || !lname || !id|| !gender|| !HMO|| !ADHD|| !Age|| !Phone|| !email) {
+    alert("Please fill out all required fields.");
+    return; 
+  }
+
+
+  localStorage.setItem("fname", fname);
+  localStorage.setItem("lname", lname);
+
+  window.location.href = "index.html";
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var form = document.getElementById("form");
+  if (form) {
+      form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          initializeForm();
+      });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var resultElement = document.getElementById("result");
+  if (resultElement) {
+      var submittedFname = localStorage.getItem("fname");
+      var submittedLname = localStorage.getItem("lname");
+      if (submittedFname && submittedLname) {
+
+        var nameContainer = document.createElement('div');
+          nameContainer.classList.add('name-container');
+
+          var firstLetter = submittedFname.charAt(0).toUpperCase();
+          var circle = document.createElement('div');
+          circle.textContent = firstLetter;
+          circle.classList.add('name-circle');
+
+          var nameText = document.createElement('span');
+          nameText.textContent = submittedFname + " " + submittedLname;
+          nameText.classList.add('name-text');
+
+          nameContainer.appendChild(circle);
+          nameContainer.appendChild(nameText);
+
+          resultElement.appendChild(nameContainer);
+
+          localStorage.removeItem("fname");
+          localStorage.removeItem("lname");
+      }
+  }
+});
+
