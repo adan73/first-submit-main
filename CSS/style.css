@@ -52,7 +52,10 @@ footer i {
   color: #598b83;
 }
 
-header .logo img {
+#logo{
+  background-image: url("../images/logo\ photo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 275.17px;
   height: 140px;
   flex-shrink: 0;
