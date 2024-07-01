@@ -96,7 +96,6 @@ header .logo img {
   width: 15px;
   height: 15px;
   background-color: #4caf50;
-  /* Green color to indicate online status */
   border-radius: 50%;
   opacity: 0.85;
 }
@@ -235,10 +234,8 @@ main #left_side {
 #patione li {
   border-color: #3f3f3f49;
   border: 1px solid rgba(63, 63, 63, 0.155);
-  /* Adjust the opacity for less prominence */
   box-sizing: border-box;
   width: 496px;
-
   display: flex;
   margin-bottom: -1px;
   align-items: center;
@@ -443,8 +440,6 @@ main #right_side {
   background-color: rgb(255, 255, 255);
   box-shadow: -2px 7px 7px #00665f83, 0px 4px 4px #00000040;
   overflow: hidden;
-  /* Prevents overflow */
-
   position: relative;
 }
 
@@ -564,13 +559,11 @@ main #right_side {
   font-size: 14px;
   color: #000;
   margin-right: 18px;
-
   padding-left: 5px;
 }
 
 .active_text {
   max-width: 240px;
-
   background-color: white;
   padding: 1px;
   padding-left: 3px;
@@ -586,10 +579,7 @@ main #right_side {
 
 #activity li {
   display: flex;
-  /* Use flexbox to arrange time_text and active_text in a row */
   align-items: center;
-  /* Vertically align items */
-
   margin-bottom: 9px;
 }
 
@@ -708,8 +698,7 @@ a {
   color: #0b4b40;
   font-size: 16px;
   border-color: #296a5f;
-  box-shadow: 0 12px 16px 0 rgba(46, 75, 75, 0.19),
-    0 17px 50px 0 rgba(67, 148, 147, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(46, 75, 75, 0.19), 0 17px 50px 0 rgba(67, 148, 147, 0.19);
   cursor: pointer;
 }
 
