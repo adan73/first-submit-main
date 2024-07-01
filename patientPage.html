@@ -40,8 +40,10 @@
                         <div class="ayaInfo">
                             <div class="edit-patient">
                                 <h2 id="name"></h2>
-                                <i class="material-icons">edit</i>
-                                <i id="trash-icon" class='fas fa-trash-alt'></i>
+                                <a href="patientForm.html">
+                                    <i class="material-icons">edit</i>
+                                </a>
+                                <i id="trash-icon" class='fas fa-trash-alt' ></i>
                             </div>
                             <p>Age: <span id="age"></span></p>
                             <p>ADHD Stage: <span id="adhd-stage"></span></p>
@@ -85,7 +87,20 @@
                         <div class="calendar-dates" id="calendar-dates"></div>
                     </div>
                 </div>
-                <div class="schedule">                  
+                <div class="schedule">    
+                    <div class="schedule-table-container">
+                        <table id="timetable" class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- This tbody will be populated by JavaScript -->
+                            </tbody>
+                        </table>       
+                    </div>       
                 </div>
                 <div class="activity-Icons">
                     <i class="material-icons">graphic_eq</i>
